@@ -1,0 +1,28 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Fecha de Nacimiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of clients">
+      <!-- <th scope="row">1</th> -->
+      <td>{{c.firstname}}</td>
+      <td>{{c.lastname}}</td>
+      <td>{{c.age}}</td>
+      <td>{{c.birthdate}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div class="alert alert-primary" role="alert">
+  El promedio de edad los clientes es: {{getAverage()}}
+</div>
+
+<div class="alert alert-primary" role="alert">
+  La desviacion estandar de las edades es: {{getStandardDeviation()}}
+</div>
+<br>

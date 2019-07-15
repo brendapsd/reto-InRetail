@@ -1,0 +1,17 @@
+<form (ngSubmit)="addClient()">
+  <div class="form-group">
+    <input type="text" name="firstname" [(ngModel)]="client.firstname" class="form-control" placeholder="Nombre" required>
+  </div>
+  <div class="form-group">
+    <input type="text" name="lastname" [(ngModel)]="client.lastname" class="form-control" placeholder="Apellido" required>
+  </div>
+  <div class="form-group">
+    <input type="number" name="age" [(ngModel)]="client.age" class="form-control" placeholder="Edad" required>
+  </div>
+  <div class="form-group">
+    <input type="date" name="birthdate" [(ngModel)]="client.birthdate" class="form-control" placeholder="Fecha de nacimiento" required>
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+</form>
+<br>
+<br>

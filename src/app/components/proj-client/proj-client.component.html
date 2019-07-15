@@ -1,0 +1,30 @@
+<div class="card" >
+    <div class="card-header">
+        Expectativa de vida en el Perú
+    </div>
+    <div class="card-body">
+        Según la revista científica The Lancet publicó un nuevo estudio que indica que la población del Perú cuenta con una esperanza de vida promedio de 79,7 años
+    </div>
+  </div>
+<br>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Fecha de Nacimiento</th>
+        <th scope="col">Fecha de Fallecimiento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of clients">
+        <!-- <th scope="row">1</th> -->
+        <td>{{c.firstname}}</td>
+        <td>{{c.lastname}}</td>
+        <td>{{c.age}}</td>
+        <td>{{c.birthdate}}</td>
+        <td>{{c.death}}</td>
+      </tr>
+    </tbody>
+  </table>
